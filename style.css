@@ -1,31 +1,36 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: black;
   color: white;
   overflow-x: hidden;
 }
 
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  background: rgba(255,0,0,0.2);
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(255, 0, 0, 0.2);
 }
 
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   list-style: none;
+  padding: 0;
 }
 
 nav li {
   cursor: pointer;
+  font-size: 14px;
 }
 
+/* Pages */
 .page {
   display: none;
-  padding: 50px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -33,8 +38,76 @@ nav li {
   display: block;
 }
 
+/* Typing text */
+#typingText {
+  font-size: 26px;
+  color: #ff4d6d;
+  margin-bottom: 20px;
+}
+
+/* Love text */
+.love-text {
+  max-width: 500px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Gallery */
 .gallery {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #ff4d6d;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Hidden message */
+.hidden {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Hearts */
+.heart {
+  position: fixed;
+  color: red;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #typingText {
+    font-size: 40px;
+  }
+}  display: flex;
   justify-content: center;
   gap: 20px;
 }

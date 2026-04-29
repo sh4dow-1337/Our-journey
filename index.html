@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hearts-container"></div>
+
+<nav>
+  <h2>❤️ Us</h2>
+  <ul>
+    <li onclick="showPage('home')">Home</li>
+    <li onclick="showPage('gallery')">Gallery</li>
+    <li onclick="showPage('message')">Message</li>
+    <li onclick="showPage('memories')">Memories</li>
+    <li onclick="showPage('surprise')">Surprise</li>
+  </ul>
+</nav>
+
+<section id="home" class="page active">
+  <h1>Welcome ❤️</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+  </p>
+</section>
+
+<section id="gallery" class="page">
+  <h1>Our Gallery 📸</h1>
+  <div class="gallery">
+    <img src="images/img1.jpg">
+    <img src="images/img2.jpg">
+    <img src="images/img3.jpg">
+  </div>
+</section>
+
+<section id="message" class="page">
+  <h1>For You 💌</h1>
+  <button onclick="revealMessage()">Click Me</button>
+  <p id="hiddenMessage" class="hidden">
+    You are the best thing that ever happened to me ❤️
+  </p>
+</section>
+
+<section id="memories" class="page">
+  <h1>Time Together ⏳</h1>
+  <p id="timer"></p>
+</section>
+
+<section id="surprise" class="page">
+  <h1>Surprise 🎁</h1>
+  <button onclick="playMusic()">Play Music 🎶</button>
+</section>
+
+<audio id="bgMusic" src="music.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

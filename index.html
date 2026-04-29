@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Rani ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
 
 <nav>
   <h2>❤️ Us</h2>
-  <ul>
+  <ul id="navLinks">
     <li onclick="showPage('home')">Home</li>
     <li onclick="showPage('gallery')">Gallery</li>
     <li onclick="showPage('message')">Message</li>
@@ -21,37 +22,41 @@
 </nav>
 
 <section id="home" class="page active">
-  <h1>Welcome ❤️</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+  <h1 id="typingText"></h1>
+  <p class="love-text">
+    From the moment you walked into my life, everything became brighter, warmer, and more meaningful.  
+    You are not just my love, you are my peace, my happiness, and my forever.  
+    Every heartbeat of mine whispers your name, and every dream I see has you in it. ❤️
   </p>
 </section>
 
 <section id="gallery" class="page">
-  <h1>Our Gallery 📸</h1>
+  <h1>Our Beautiful Moments 📸</h1>
   <div class="gallery">
-    <img src="images/img1.jpg">
-    <img src="images/img2.jpg">
-    <img src="images/img3.jpg">
+    <img src="img1.jpg" onerror="this.style.display='none'">
+    <img src="img2.jpg" onerror="this.style.display='none'">
+    <img src="img3.jpg" onerror="this.style.display='none'">
   </div>
 </section>
 
 <section id="message" class="page">
-  <h1>For You 💌</h1>
-  <button onclick="revealMessage()">Click Me</button>
+  <h1>A Message For You 💌</h1>
+  <button onclick="revealMessage()">Tap to Read</button>
   <p id="hiddenMessage" class="hidden">
-    You are the best thing that ever happened to me ❤️
+    Rani, you are the most precious part of my life.  
+    I promise to stand by you, love you endlessly, and cherish every moment with you.  
+    No matter what happens, my heart will always belong to you. ❤️
   </p>
 </section>
 
 <section id="memories" class="page">
-  <h1>Time Together ⏳</h1>
+  <h1>Our Journey ⏳</h1>
   <p id="timer"></p>
 </section>
 
 <section id="surprise" class="page">
-  <h1>Surprise 🎁</h1>
-  <button onclick="playMusic()">Play Music 🎶</button>
+  <h1>Just For You 🎁</h1>
+  <button onclick="playMusic()">Play Our Song 🎶</button>
 </section>
 
 <audio id="bgMusic" src="music.mp3"></audio>
